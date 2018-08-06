@@ -27,28 +27,28 @@ SetFormat float, 0.2
 ;		   o  // __            ====__    /_((                        /_/    /_____/  /_/ |_/   /_/  |_|	 ;
 ;		  o  //  @))       ))))      ===/__((															                               ;
 ;		     ))           )))))))        __((															                               ;
-;		     \\     \)     ))))    __===\ _((															                               ;
-;		      \\_______________====      \_((															                               ;
-;		                                  \((															                               ;
+;		     \\     \)     ))))    __===\ _((															 Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  ;
+;		      \\_______________====      \_((															 Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  ;
+;		                                  \((															 Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  ;
 ;****************************************************************************************************;
 
 sleeper = 0 ; used for looping while the user is choosing game type
 bonus = 0
 RV = 0
-Score = %A_WorkingDir%\G\score.ini
+Score = %A_WorkingDir%\score.ini
 
-Diglett = %A_WorkingDir%\G\P\diglett.png
-Dugtrio = %A_WorkingDir%\G\P\images.png
-CoinPing = %A_WorkingDir%\G\P\PokeCoin.png
+Diglett = %A_WorkingDir%\P\diglett.png
+Dugtrio = %A_WorkingDir%\P\images.png
+CoinPing = %A_WorkingDir%\P\PokeCoin.png
 
-TopWall = %A_WorkingDir%\G\P\TopWall.png
-LeftWall = %A_WorkingDir%\G\P\ShrubberyWall.png
-RightWall = %A_WorkingDir%\G\P\BarrelWall.png
-BottomWall = %A_WorkingDir%\G\P\GrassWall.png
+TopWall = %A_WorkingDir%\P\TopWall.png
+LeftWall = %A_WorkingDir%\P\ShrubberyWall.png
+RightWall = %A_WorkingDir%\P\BarrelWall.png
+BottomWall = %A_WorkingDir%\P\GrassWall.png
 
 
 Gui, start: Font, S15 CDefault Underline, impact
-Gui, start:Add, Picture, x-8 y0 w380 h270 , %A_WorkingDir%\G\P\DiglettHome.jpg
+Gui, start:Add, Picture, x-8 y0 w380 h270 , %A_WorkingDir%\P\DiglettHome.jpg
 Gui, start:Font, S10, impact
 Gui, start:Add, Button, x262 y60 w80 h30 gNavGo, Start  ;label for starting pokemon
 Gui, start:Add, Button, x20 y60 w80 h30 gNavHo, Start ; label for starting
@@ -86,53 +86,53 @@ if (hp = "no") then ;if harry potter is/isnt chosen, vars are changed to reflect
 	BottomWallW = 480
 	DugH = 35
 	DugW = 43
-	Diglett = %A_WorkingDir%\G\P\diglett.png
-	Dugtrio = %A_WorkingDir%\G\P\images.png
-	CoinPing = %A_WorkingDir%\G\P\PokeCoin.png
-	trainer = %A_WorkingDir%\G\P\trainer.png
+	Diglett = %A_WorkingDir%\P\diglett.png
+	Dugtrio = %A_WorkingDir%\P\images.png
+	CoinPing = %A_WorkingDir%\P\PokeCoin.png
+	trainer = %A_WorkingDir%\P\trainer.png
 	;~ trainerRV := "%A_WorkingDir%\G\P\trainer.png"
 
-	TopWall = %A_WorkingDir%\G\P\TopWall.png
-	LeftWall = %A_WorkingDir%\G\P\ShrubberyWall.png
-	RightWall = %A_WorkingDir%\G\P\BarrelWall.png
-	BottomWall = %A_WorkingDir%\G\P\GrassWall.png
+	TopWall = %A_WorkingDir%\P\TopWall.png
+	LeftWall = %A_WorkingDir%\P\ShrubberyWall.png
+	RightWall = %A_WorkingDir%\P\BarrelWall.png
+	BottomWall = %A_WorkingDir%\P\GrassWall.png
 }
 if (hp = "yes") then
 {
 	if (G = "1") then
 	{
-		trainer = %A_WorkingDir%\G\H\Harry.png
-		trainerRV = %A_WorkingDir%\G\H\HarryRV.png
-		CoinPing = %A_WorkingDir%\G\H\GriffleDick.png
-		BottomWall = %A_WorkingDir%\G\H\GriffTowers.png
+		trainer = %A_WorkingDir%\H\Harry.png
+		trainerRV = %A_WorkingDir%\H\HarryRV.png
+		CoinPing = %A_WorkingDir%\H\GriffleDick.png
+		BottomWall = %A_WorkingDir%\H\GriffTowers.png
 		TrainerH = 40
 		TrainerW = 60
 		
 	}
 	if (S = "1") then
 	{
-		trainer = %A_WorkingDir%\G\H\Malfoy.png
-		trainerRV = %A_WorkingDir%\G\H\MalfoyRV.png
-		CoinPing = %A_WorkingDir%\G\H\SlitherHen.png
-		BottomWall = %A_WorkingDir%\G\H\SlythTowers.png
+		trainer = %A_WorkingDir%\H\Malfoy.png
+		trainerRV = %A_WorkingDir%\H\MalfoyRV.png
+		CoinPing = %A_WorkingDir%\H\SlitherHen.png
+		BottomWall = %A_WorkingDir%\H\SlythTowers.png
 		TrainerH = 50
 		TrainerW = 50
 	}
 	if (R = "1") then
 	{
-		trainer = %A_WorkingDir%\G\H\RavenRider.png
-		trainerRV = %A_WorkingDir%\G\H\RavenRiderRV.png
-		CoinPing = %A_WorkingDir%\G\H\Rave&Clow.png
-		BottomWall = %A_WorkingDir%\G\H\RaveTowers.png
+		trainer = %A_WorkingDir%\H\RavenRider.png
+		trainerRV = %A_WorkingDir%\H\RavenRiderRV.png
+		CoinPing = %A_WorkingDir%\H\Rave&Clow.png
+		BottomWall = %A_WorkingDir%\H\RaveTowers.png
 		TrainerH = 50
 		TrainerW = 50
 	}
 	if (H = "1") then
 	{
-		trainer = %A_WorkingDir%\G\H\HuffleRider.png
-		trainerRV = %A_WorkingDir%\G\H\HuffleRiderRV.png
-		CoinPing = %A_WorkingDir%\G\H\Huff&Puff.png
-		BottomWall = %A_WorkingDir%\G\H\HuffTowers.png
+		trainer = %A_WorkingDir%\H\HuffleRider.png
+		trainerRV = %A_WorkingDir%\H\HuffleRiderRV.png
+		CoinPing = %A_WorkingDir%\H\Huff&Puff.png
+		BottomWall = %A_WorkingDir%\H\HuffTowers.png
 		TrainerH = 50
 		TrainerW = 50
 	}
@@ -144,8 +144,8 @@ if (hp = "yes") then
 		CoinW = 20
 		BottomWallH = 50
 		BottomWallW = 440
-	Diglett = %A_WorkingDir%\G\H\Snitch.png
-	Dugtrio = %A_WorkingDir%\G\H\Triwizard_Cups.jpg
+	Diglett = %A_WorkingDir%\H\Snitch.png
+	Dugtrio = %A_WorkingDir%\H\Triwizard_Cups.jpg
 	;~ CoinPing := "%A_WorkingDir%\G\H\PokeCoin.png"
 	
 	;~ trainer := "%A_WorkingDir%\G\H\trainer.png"
@@ -423,11 +423,11 @@ return
 NavHo:
 hp = Yes
 Gui, Destroy
-Gui, Add, Picture, x12 y0 w430 h60 , %A_WorkingDir%\G\H\Choose.png
-Gui, Add, Picture, x2 y70 w110 h130 , %A_WorkingDir%\G\H\GriffleDick.png
-Gui, Add, Picture, x332 y70 w110 h130 , %A_WorkingDir%\G\H\Huff&Puff.png
-Gui, Add, Picture, x112 y70 w110 h130 , %A_WorkingDir%\G\H\Rave&Clow.png
-Gui, Add, Picture, x222 y70 w110 h130 , %A_WorkingDir%\G\H\SlitherHen.png
+Gui, Add, Picture, x12 y0 w430 h60 , %A_WorkingDir%\H\Choose.png
+Gui, Add, Picture, x2 y70 w110 h130 , %A_WorkingDir%\H\GriffleDick.png
+Gui, Add, Picture, x332 y70 w110 h130 , %A_WorkingDir%\H\Huff&Puff.png
+Gui, Add, Picture, x112 y70 w110 h130 , %A_WorkingDir%\H\Rave&Clow.png
+Gui, Add, Picture, x222 y70 w110 h130 , %A_WorkingDir%\H\SlitherHen.png
 Gui, Add, Radio, x12 y210 w80 h20 vG, GriffleDork
 Gui, Add, Radio, x122 y210 w100 h20 vR, Rave & clap
 Gui, Add, Radio, x232 y210 w100 h20 vS, Slither In
